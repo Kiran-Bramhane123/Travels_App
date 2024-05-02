@@ -133,23 +133,23 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"travels.tasks.all"
-# 	],
-# 	"daily": [
-# 		"travels.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"travels.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"travels.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"travels.tasks.monthly"
-# 	],
-# }
+scheduler_events = {
+	# "all": [
+	# 	"travels.tasks.all"
+	# ],
+	"daily": [
+		"travels.travels.scheduled_events.send_insurance_reminder"
+	],
+	# "hourly": [
+	# 	"travels.tasks.hourly"
+	# ],
+	# "weekly": [
+	# 	"travels.tasks.weekly"
+	# ],
+	# "monthly": [
+	# 	"travels.tasks.monthly"
+	# ],
+}
 
 # Testing
 # -------
